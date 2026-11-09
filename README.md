@@ -134,7 +134,7 @@ mongosh --eval "db.runCommand({ ping: 1 })"
 
 ### 2. Clone and Navigate
 ```bash
-cd /home/srujan/FOODLINK
+cd /home/FOODLINK
 ```
 
 ### 3. Configure Environments
@@ -150,16 +150,16 @@ cd ../Frontend && cp .env.example .env
 ### 4. Install Dependencies
 ```bash
 # Install backend dependencies
-cd /home/srujan/FOODLINK/backend && npm install
+cd /home/FOODLINK/backend && npm install
 
 # Install Frontend dependencies
-cd /home/srujan/FOODLINK/Frontend && npm install
+cd /home/FOODLINK/Frontend && npm install
 ```
 
 ### 5. Seed Clean Karnataka Platform Data
 Run the automated seed script to purge legacy data and provision verified Karnataka demo accounts and authentic surplus listings:
 ```bash
-cd /home/srujan/FOODLINK/backend
+cd /home/FOODLINK/backend
 npm run seed
 ```
 
@@ -168,11 +168,11 @@ Open two terminal windows:
 
 ```bash
 # Terminal 1: Backend API (http://localhost:5000)
-cd /home/srujan/FOODLINK/backend
+cd /home/FOODLINK/backend
 npm run dev
 
 # Terminal 2: Web Client (http://localhost:5173)
-cd /home/srujan/FOODLINK/Frontend
+cd /home/FOODLINK/Frontend
 npm run dev
 ```
 
@@ -199,15 +199,15 @@ Foodlink maintains a comprehensive test suite of **152 automated tests** verifyi
 
 ```bash
 # Run all backend unit, API, concurrency & E2E tests (128 passing tests)
-cd /home/srujan/FOODLINK/backend
+cd /home/FOODLINK/backend
 npm test -- --run
 
 # Run all frontend component, hook & integration tests (24 passing tests)
-cd /home/srujan/FOODLINK/Frontend
+cd /home/FOODLINK/Frontend
 npm test -- --run
 
 # Compile the production frontend bundle
-cd /home/srujan/FOODLINK/Frontend
+cd /home/FOODLINK/Frontend
 npm run build
 ```
 
